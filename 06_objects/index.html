@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./main.js"></script>
+  <script>
+    let objects = [
+      {value: '1', label: 'a'},
+      {value: '2', label: 'b'},
+      {value: '3', label: 'c'},
+      {value: '4', label: 'd'},
+    ];
+    //let objects = ['1', 2, 'три', 88];
+    //let objects = [{value: '1', label: 'a'},{value: 8, label: '12'}];
+    //let objects = {value: '11', label: '12', key: '12'};
+    let value = '';
+
+    window.onload = function () {
+      let sel = createDropDownList(objects, value);
+      document.body.append(sel);
+    }
+  </script>
+</head>
+<body class="body">
+</body>
+</html>
